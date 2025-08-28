@@ -1,0 +1,115 @@
+{
+  "presidentialPanel": [
+    {
+      "id": 1,
+      "role": "President",
+      "name": "Md. Nafim Islam",
+      "image": "https://i.ibb.co.com/5hdcZRkW/IMG-0092.jpg",
+      "email": "president@mistinnovation.org",
+      "facebook": "https://facebook.com/president",
+      "linkedin": "https://linkedin.com/in/president",
+      "phone": "+8801XXXXXXXXX"
+    },
+    {
+      "id": 2,
+      "role": "General Secretary",
+      "name": "Ayesha Rahman",
+      "image": "/images/members/gs.jpg",
+      "email": "gs@mistinnovation.org",
+      "facebook": "https://facebook.com/gs",
+      "linkedin": "https://linkedin.com/in/gs",
+      "phone": "+8801XXXXXXXXX"
+    },
+    {
+      "id": 3,
+      "role": "Vice President",
+      "name": "Tanvir Ahmed",
+      "image": "/images/members/vp.jpg",
+      "email": "vp@mistinnovation.org",
+      "facebook": "https://facebook.com/vp",
+      "linkedin": "https://linkedin.com/in/vp",
+      "phone": "+8801XXXXXXXXX"
+    }
+  ],
+
+  "executiveDirectors": [
+    {
+      "id": 4,
+      "role": "Executive Director",
+      "name": "Sadia Karim",
+      "image": "/images/members/ed1.jpg",
+      "email": "ed1@mistinnovation.org",
+      "facebook": "https://facebook.com/ed1",
+      "linkedin": "https://linkedin.com/in/ed1"
+    },
+    {
+      "id": 5,
+      "role": "Executive Director",
+      "name": "Arif Hossain",
+      "image": "/images/members/ed2.jpg",
+      "email": "ed2@mistinnovation.org",
+      "facebook": "https://facebook.com/ed2",
+      "linkedin": "https://linkedin.com/in/ed2"
+    },
+    {
+      "id": 6,
+      "role": "Executive Director",
+      "name": "Nusrat Jahan",
+      "image": "/images/members/ed3.jpg",
+      "email": "ed3@mistinnovation.org",
+      "facebook": "https://facebook.com/ed3",
+      "linkedin": "https://linkedin.com/in/ed3"
+    },
+    {
+      "id": 7,
+      "role": "Executive Director",
+      "name": "Fahim Uddin",
+      "image": "/images/members/ed4.jpg",
+      "email": "ed4@mistinnovation.org",
+      "facebook": "https://facebook.com/ed4",
+      "linkedin": "https://linkedin.com/in/ed4"
+    }
+  ],
+
+  "executiveMembers": [
+    {
+      "id": 8,
+      "role": "Executive Member",
+      "name": "Mahfuz Khan",
+      "image": "/images/members/em1.jpg",
+      "email": "em1@mistinnovation.org",
+      "facebook": "https://facebook.com/em1",
+      "linkedin": "https://linkedin.com/in/em1"
+    },
+    {
+      "id": 9,
+      "role": "Executive Member",
+      "name": "Rafia Sultana",
+      "image": "/images/members/em2.jpg",
+      "email": "em2@mistinnovation.org",
+      "facebook": "https://facebook.com/em2",
+      "linkedin": "https://linkedin.com/in/em2"
+    }
+  ],
+
+  "associateMembers": [
+    {
+      "id": 10,
+      "role": "Associate Member",
+      "name": "Hasan Mahmud",
+      "image": "/images/members/am1.jpg",
+      "email": "am1@mistinnovation.org",
+      "facebook": "https://facebook.com/am1",
+      "linkedin": "https://linkedin.com/in/am1"
+    },
+    {
+      "id": 11,
+      "role": "Associate Member",
+      "name": "Nabila Akter",
+      "image": "/images/members/am2.jpg",
+      "email": "am2@mistinnovation.org",
+      "facebook": "https://facebook.com/am2",
+      "linkedin": "https://linkedin.com/in/am2"
+    }
+  ]
+}
