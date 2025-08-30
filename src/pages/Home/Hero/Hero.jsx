@@ -13,17 +13,13 @@ const Hero = () => {
         <div className="hero-overlay bg-black bg-opacity-80"></div>
         <div className="hero-content text-neutral-content text-center px-4">
           <div className="">
-            <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">
-              Welcome to MIST INNOVATION CLUB
+            <h1 className="mb-4 text-3xl sm:text-4xl md:text-6xl font-bold">
+              MIST INNOVATION CLUB <br /> 
             </h1>
-            <p className="mb-4 text-sm sm:text-base md:text-lg px-20">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            
+            <p className="mb-4 text-sm sm:text-base md:text-3xl px-20 font-semibold">
+              <span className="text-blue-400">Innovate to Serve</span>
             </p>
-            <button className="btn btn-primary btn-sm sm:btn-md md:btn-lg">
-              Get Started
-            </button>
           </div>
         </div>
       </div>

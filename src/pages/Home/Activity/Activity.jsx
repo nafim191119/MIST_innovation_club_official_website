@@ -4,40 +4,37 @@ import { CheckCircle, Lightbulb, Users, Rocket } from "lucide-react";
 const activities = [
   {
     icon: <CheckCircle className="w-6 h-6 text-blue-600" />,
-    title: "Workshops",
-    desc: "Hands-on sessions to learn and apply innovative skills.",
+    title: "Develop Technical Skills",
+    desc: "Learning by doing is how real innovation happens.",
   },
   {
     icon: <Lightbulb className="w-6 h-6 text-blue-600" />,
-    title: "Projects",
-    desc: "Collaborative projects solving real-world problems.",
+    title: "Learn Professional Tactics",
+    desc: "Learn how to think, plan, and execute like a pro.",
   },
   {
     icon: <Users className="w-6 h-6 text-blue-600" />,
-    title: "Community",
-    desc: "Engage with peers and industry experts in tech meetups.",
+    title: "Unveil Your True Passion",
+    desc: "Discover and work towards your passion.",
   },
   {
     icon: <Rocket className="w-6 h-6 text-blue-600" />,
-    title: "Competitions",
-    desc: "Participate in hackathons and innovation challenges.",
+    title: "Insights from Industry Experts",
+    desc: "Hear directly from the professionals.",
   },
 ];
 
 const Activity = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-800 to-blue-600 rounded-2xl py-16 px-8 text-white my-20">
+    <section className="bg-gradient-to-r from-blue-800 to-blue-600 rounded-2xl py-16 px-8 text-white my-20 mx-8">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left side: Section heading */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 uppercase">
             Our Activities
           </h2>
           <p className="text-base md:text-lg opacity-90">
-            At MIST Innovation Club, we engage students with diverse activities 
-            ranging from workshops and projects to competitions and networking. 
-            These initiatives empower members to grow technically and 
-            professionally.
+            MIC offers a dynamic blend of activities designed to help people achieve hands-on experience with modern tech, development and research. We also offer a range of workshops, sessions, and competitions designed to prepare students for real-world innovation.
           </p>
         </div>
 
@@ -52,7 +49,7 @@ const Activity = () => {
                 <div className="bg-white p-2 rounded-md shadow">
                   {activity.icon}
                 </div>
-                <h3 className="text-lg font-semibold">{activity.title}</h3>
+                <h3 className="text-md font-semibold">{activity.title}</h3>
               </div>
               <p className="text-sm opacity-80">{activity.desc}</p>
             </div>

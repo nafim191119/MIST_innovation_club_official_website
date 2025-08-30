@@ -3,7 +3,7 @@ import React from "react";
 const Stats = () => {
   return (
     <div>
-      <div className="bg-[#0a0f1c] text-white py-12 px-6 rounded-2xl">
+      <div className="bg-[#0a0f1c] text-white py-12 px-6 rounded-2xl mx-8 my-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold">
             Trusted by innovators worldwide

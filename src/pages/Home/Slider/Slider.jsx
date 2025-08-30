@@ -9,10 +9,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const Slider = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-blue-950 to-blue-800 py-6 rounded-xl">
-      <div className="max-w-5xl mx-auto text-center mb-6">
-        <h2 className="text-2xl md:text-4xl font-bold text-white">
-          Our Activities
+    <div className="w-full py-6 rounded-xl">
+      <div className="max-w-5xl mx-auto text-center mb-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-white uppercase">
+          Featured
         </h2>
         <p className="text-gray-300 mt-2 text-sm md:text-base">
           Explore the latest initiatives, events, and achievements.

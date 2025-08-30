@@ -64,7 +64,7 @@ const NoticeBoard = () => {
   });
 
   return (
-    <div className="w-full bg-gradient-to-r from-blue-950 to-blue-800 py-10 px-4">
+    <div className="w-full bg-gradient-to-r from-blue-950 to-blue-800 py-10 px-4 rounded">
       <div className="max-w-6xl mx-auto">
         {/* Header with Filters */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
