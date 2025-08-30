@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-6 text-white font-medium">
             <NavItem to={"/"} label="Home" />
             <NavItem to={"/events"} label="Event" />
-            <NavItem to={"/blog"} label="Blog" />
+            <NavItem to={"/portal"} label="Portal" />
             <NavItem to={"/gallery"} label="Gallery" />
             <NavItem to={"/people"} label="People" />
             <NavItem to={"/about"} label="About" />
@@ -93,7 +93,7 @@ const Navbar = () => {
         <ul className="p-4 space-y-3 font-medium text-[#0033ff]">
           <li><Link to="/" onClick={toggleMenu} className="block hover:text-blue-600">Home</Link></li>
           <li><Link to="/events" onClick={toggleMenu} className="block hover:text-blue-600">Event</Link></li>
-          <li><Link to="/blog" onClick={toggleMenu} className="block hover:text-blue-600">Blog</Link></li>
+          <li><Link to="/portal" onClick={toggleMenu} className="block hover:text-blue-600">Portal</Link></li>
           <li><Link to="/gallery" onClick={toggleMenu} className="block hover:text-blue-600">Gallery</Link></li>
           <li><Link to="/people" onClick={toggleMenu} className="block hover:text-blue-600">People</Link></li>
           <li><Link to="/about" onClick={toggleMenu} className="block hover:text-blue-600">About</Link></li>

@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
           element: <EventPage></EventPage>
         },
         {
-          path: 'blog',
+          path: 'portal',
           element: <BlogSection></BlogSection>
         },
         {
