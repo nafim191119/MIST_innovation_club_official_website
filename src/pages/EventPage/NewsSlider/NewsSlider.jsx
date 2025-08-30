@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation, Autoplay } from "swiper/modules";
+import Events from "../Events/Events";
 
 const NewsSlider = () => {
     return (
@@ -80,6 +81,9 @@ const NewsSlider = () => {
                       </div>
                     </SwiperSlide>
                   </Swiper>
+
+                  
+                  <Events></Events>
                 </div>
         </div>
     );

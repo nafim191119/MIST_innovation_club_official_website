@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Side */}
         <div>
-          <h2 className="text-2xl font-bold mb-3 uppercase">
+          <h2 className="text-2xl font-bold mb-24 uppercase">
             MIST Innovation Club
           </h2>
           <div className="flex gap-6 mb-4">
