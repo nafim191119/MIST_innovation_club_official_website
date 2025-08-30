@@ -13,7 +13,6 @@ import "swiper/css/pagination";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import NewsSlider from "../NewsSlider/NewsSlider";
 
 const workshops = [
   {
@@ -59,7 +58,6 @@ const workshops = [
 const Workshop = () => {
   return (
     <div>
-        <NewsSlider></NewsSlider>
       <section className="w-full bg-gradient-to-r from-blue-950 to-blue-800 py-12">
         <div className="max-w-6xl mx-auto px-4">
           {/* Section Header */}

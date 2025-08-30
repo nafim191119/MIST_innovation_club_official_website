@@ -12,7 +12,7 @@ const Footer = () => {
   const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
   return (
-    <footer className="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-10 px-8">
+    <footer className="bg-gradient-to-r from-blue-900 to-blue-600 text-white pt-16 px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Side */}
         <div>

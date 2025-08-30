@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
-import Workshop from "../pages/EventPage/Workshop/Workshop";
-import ImageGallery from "../pages/Archive/ImageGallery/ImageGallery";
 import ClubMembers from "../pages/ClubMembers/ClubMembers";
+import BlogSection from "../pages/Archive/BlogSection/BlogSection";
+import EventPage from "../pages/EventPage/EventPage/EventPage";
 
 export const router = createBrowserRouter([
   {
@@ -15,15 +15,15 @@ export const router = createBrowserRouter([
             element: <Home></Home>
         },
         {
-          path: 'events/workshop',
-          element: <Workshop></Workshop>
+          path: 'events',
+          element: <EventPage></EventPage>
         },
         {
-          path: 'archive/gallery',
-          element: <ImageGallery></ImageGallery>
+          path: 'blog',
+          element: <BlogSection></BlogSection>
         },
         {
-          path: 'clubMembers',
+          path: 'people',
           element: <ClubMembers></ClubMembers>
         }
     ]

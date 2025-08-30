@@ -24,78 +24,11 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-6 text-white font-medium">
             <NavItem to={"/"} label="Home" />
-
-            <div className="relative group">
-              <button className="flex items-center gap-1 px-2 py-1 hover:text-gray-200 transition-colors">
-                Event
-                <svg
-                  className="h-4 w-4 transform group-hover:rotate-180 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <ul className="absolute left-0 top-full w-44 bg-white text-[#0033ff] rounded-md shadow-lg px-2 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <DropdownItem to={"events/news"} label="News" />
-                <DropdownItem to={"events/workshop"} label="Workshop" />
-              </ul>
-            </div>
-
-            <div className="relative group">
-              <button className="flex items-center gap-1 px-2 py-1 hover:text-gray-200 transition-colors">
-                Archive
-                <svg
-                  className="h-4 w-4 transform group-hover:rotate-180 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <ul className="absolute left-0 top-full w-44 bg-white text-[#0033ff] rounded-md shadow-lg px-2 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <DropdownItem to={"archive/gallery"} label="Gallery" />
-                <DropdownItem label="Blog" />
-                <DropdownItem label="Post" />
-              </ul>
-            </div>
-
-            <NavItem to={"clubMembers"} label="Club Member" />
-
-            <div className="relative group">
-              <button className="flex items-center gap-1 px-2 py-1 hover:text-gray-200 transition-colors">
-                About Us
-                <svg
-                  className="h-4 w-4 transform group-hover:rotate-180 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <ul className="absolute left-0 top-full w-44 bg-white text-[#0033ff] rounded-md shadow-lg px-2 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <DropdownItem label="People" />
-                <DropdownItem label="Collaboration" />
-              </ul>
-            </div>
+            <NavItem to={"/events"} label="Event" />
+            <NavItem to={"/blog"} label="Blog" />
+            <NavItem to={"/gallery"} label="Gallery" />
+            <NavItem to={"/people"} label="People" />
+            <NavItem to={"/about"} label="About" />
           </div>
 
           {/* Login Button (desktop only) */}
@@ -152,61 +85,19 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <span className="font-bold text-[#0033ff]">MIST Innovation Club</span>
+          <span className="font-bold text-[#0033ff] uppercase">MIST Innovation Club</span>
           <button onClick={toggleMenu} className="text-[#0033ff]">
             ✕
           </button>
         </div>
         <ul className="p-4 space-y-3 font-medium text-[#0033ff]">
-          <li>
-            <Link
-              to="/"
-              onClick={toggleMenu}
-              className="block hover:text-blue-600"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <DropdownMobile label="Event">
-              <DropdownItem
-                to={"events/news"}
-                label="News"
-                onClick={toggleMenu}
-              />
-              <DropdownItem
-                to={"events/workshop"}
-                label="Workshop"
-                onClick={toggleMenu}
-              />
-            </DropdownMobile>
-          </li>
-          <li>
-            <DropdownMobile label="Archive">
-              <DropdownItem
-                to={"archive/gallery"}
-                label="Gallery"
-                onClick={toggleMenu}
-              />
-              <DropdownItem label="Blog" />
-              <DropdownItem label="Post" />
-            </DropdownMobile>
-          </li>
-          <li>
-            <Link
-              to="clubMembers"
-              onClick={toggleMenu}
-              className="block hover:text-blue-600"
-            >
-              Club Member
-            </Link>
-          </li>
-          <li>
-            <DropdownMobile label="About Us">
-              <DropdownItem label="People" />
-              <DropdownItem label="Collaboration" />
-            </DropdownMobile>
-          </li>
+          <li><Link to="/" onClick={toggleMenu} className="block hover:text-blue-600">Home</Link></li>
+          <li><Link to="/events" onClick={toggleMenu} className="block hover:text-blue-600">Event</Link></li>
+          <li><Link to="/blog" onClick={toggleMenu} className="block hover:text-blue-600">Blog</Link></li>
+          <li><Link to="/gallery" onClick={toggleMenu} className="block hover:text-blue-600">Gallery</Link></li>
+          <li><Link to="/people" onClick={toggleMenu} className="block hover:text-blue-600">People</Link></li>
+          <li><Link to="/about" onClick={toggleMenu} className="block hover:text-blue-600">About</Link></li>
+          
           <li>
             <button className="w-full bg-[#0033ff] text-white py-2 rounded-lg shadow hover:bg-blue-700 transition-all">
               Login

@@ -81,9 +81,6 @@ const NewsSlider = () => {
                       </div>
                     </SwiperSlide>
                   </Swiper>
-
-                  
-                  <Events></Events>
                 </div>
         </div>
     );
