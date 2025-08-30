@@ -13,58 +13,63 @@ const ClubMembers = () => {
   if (!members) return <p className="text-center text-gray-500">Loading...</p>;
 
   const Card = ({ person }) => (
-    <div
-      className="bg-white text-center p-6 rounded-lg w-64 shadow-md 
-                  transform transition duration-300 ease-in-out 
-                  hover:scale-105 hover:shadow-2xl hover:shadow-blue-200"
-    >
-      {/* Profile Image */}
-      <img
-        src={person.image}
-        alt={person.name}
-        className="w-52 h-52 rounded-full mx-auto object-cover border-4 border-transparent hover:border-blue-500 transition"
-      />
+  <div
+    className="bg-white text-center p-6 rounded-lg w-64 shadow-md 
+               transform transition duration-300 ease-in-out 
+               hover:scale-105 hover:shadow-2xl hover:shadow-blue-200 relative"
+  >
+    {/* Role Badge at top */}
+    {person.role && (
+      <span className="absolute -top-2 left-1/2 transform -translate-x-1/2 
+                       bg-blue-700 text-white text-xs font-semibold 
+                       px-3 py-1 rounded-full shadow">
+        {person.role}
+      </span>
+    )}
 
-      {/* Name */}
-      <h3 className="mt-4 text-lg font-semibold text-gray-800">
-        {person.name}
-      </h3>
+    {/* Profile Image */}
+    <img
+      src={person.image}
+      alt={person.name}
+      className="w-52 h-52 rounded-full mx-auto object-cover border-4 border-transparent hover:border-blue-500 transition mt-6"
+    />
 
-      {/* Role & Dept */}
-      <p className="text-sm text-gray-600">{person.role}</p>
-      {person.department && (
-        <p className="text-sm text-gray-500">{person.department}</p>
-      )}
+    {/* Name */}
+    <h3 className="mt-4 text-lg font-semibold text-gray-800">
+      {person.name}
+    </h3>
 
-      {/* Email & Phone */}
-      <div className="mt-3 text-sm text-gray-700 space-y-2">
-        {/* Phone */}
-        {person.phone && <p>{person.phone}</p>}
-      </div>
+    {/* Department */}
+    <p className="text-sm text-gray-600">{person.department}</p>
 
-      {/* Social Links */}
-      <div className="flex justify-center gap-4 mt-4 text-gray-600">
-        <a href={person.facebook} target="_blank" rel="noreferrer">
-          <FaFacebook className="hover:text-blue-600 transition" />
-        </a>
-        <a href={person.linkedin} target="_blank" rel="noreferrer">
-          <FaLinkedin className="hover:text-blue-700 transition" />
-        </a>
-        {/* Email with Gmail icon */}
-        <a
-          href={`mailto:${person.email}`}
-          className="flex items-center justify-center gap-2 hover:text-red-600 transition"
-        >
-          <FaEnvelope />
-        </a>
-      </div>
+    {/* Email & Phone */}
+    <div className="mt-3 text-sm text-gray-700 space-y-2">
+      {person.phone && <p>{person.phone}</p>}
     </div>
-  );
+
+    {/* Social Links */}
+    <div className="flex justify-center gap-4 mt-4 text-gray-600">
+      <a href={person.facebook} target="_blank" rel="noreferrer">
+        <FaFacebook className="hover:text-blue-600 transition" />
+      </a>
+      <a href={person.linkedin} target="_blank" rel="noreferrer">
+        <FaLinkedin className="hover:text-blue-700 transition" />
+      </a>
+      <a
+        href={`mailto:${person.email}`}
+        className="flex items-center justify-center gap-2 hover:text-red-600 transition"
+      >
+        <FaEnvelope />
+      </a>
+    </div>
+  </div>
+);
+
 
   return (
     <div>
       <div className="bg-black text-white text-center">
-        <div className="max-w-7xl mx-auto px-6 py-12 md:px-16 md:py-16">
+        <div className="max-w-7xl mx-auto px-6 py-20 md:px-16 md:py-24">
           {/* Our Team Header */}
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 tracking-wide relative inline-block">
             Our Team
