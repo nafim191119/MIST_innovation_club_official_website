@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home/Home";
 import ClubMembers from "../pages/ClubMembers/ClubMembers";
 import BlogSection from "../pages/Archive/BlogSection/BlogSection";
 import EventPage from "../pages/EventPage/EventPage/EventPage";
+import AboutPage from "../pages/AboutPage/AboutPage";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
         {
           path: 'people',
           element: <ClubMembers></ClubMembers>
+        },
+        {
+          path: 'about',
+          element: <AboutPage></AboutPage>
         }
     ]
   },

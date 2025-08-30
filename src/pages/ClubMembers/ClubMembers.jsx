@@ -74,18 +74,28 @@ const ClubMembers = () => {
             <span className="block h-1 w-24 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-3 rounded-full"></span>
           </h2>
 
+
+
           {/* President */}
           <div className="flex justify-center mb-12">
             <Card person={members.presidentialPanel[0]} />
           </div>
+          {/* General Secretary */}
+          <h3 className="text-3xl md:text-4xl font-semibold text-center mb-6 tracking-wide uppercase relative inline-block">
+            General Secretary
+            <span className="block h-1 w-20 bg-purple-500 mx-auto mt-2 rounded-full"></span>
+          </h3>
+          <div className="flex justify-center mb-12">
+            <Card person={members.presidentialPanel[1]} />
+          </div>
 
           {/* Leadership (General Sec + VP) */}
           <h3 className="text-3xl md:text-4xl font-semibold text-center mb-6 tracking-wide uppercase relative inline-block">
-            Leadership
+            Vice President
             <span className="block h-1 w-20 bg-purple-500 mx-auto mt-2 rounded-full"></span>
           </h3>
           <div className="flex justify-center gap-6 mb-12 flex-wrap">
-            {members.presidentialPanel.slice(1).map((p) => (
+            {members.presidentialPanel.slice(2).map((p) => (
               <Card key={p.id} person={p} />
             ))}
           </div>

@@ -18,7 +18,7 @@ const Hero = () => {
             </h1>
             
             <p className="mb-4 text-sm sm:text-base md:text-3xl px-20 font-semibold">
-              <span className="text-blue-400 italic">Innovate to Serve</span>
+              <span className="text-blue-400 italic">"Innovate to Serve"</span>
             </p>
           </div>
         </div>
