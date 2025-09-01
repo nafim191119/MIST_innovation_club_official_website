@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Quote from "./Quote";
 
 const ClubMembers = () => {
   const [members, setMembers] = useState(null);
@@ -67,29 +68,28 @@ const ClubMembers = () => {
   return (
     <div>
       <div className="bg-black text-white text-center">
-        <div className="max-w-7xl mx-auto px-6 py-20 md:px-16 md:py-24">
+
+        <div className="max-w-7xl mx-auto px-6 py-10 md:px-16 md:py-16">
           {/* Our Team Header */}
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 tracking-wide relative inline-block">
-            Our Team
+            People
             <span className="block h-1 w-24 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-3 rounded-full"></span>
+            <Quote></Quote>
           </h2>
 
 
 
           {/* President */}
-          <div className="flex justify-center mb-12">
-            <Card person={members.presidentialPanel[0]} />
-          </div>
-          {/* General Secretary */}
           <h3 className="text-3xl md:text-4xl font-semibold text-center mb-6 tracking-wide uppercase relative inline-block">
-            General Secretary
+            Presidential Panel
             <span className="block h-1 w-20 bg-purple-500 mx-auto mt-2 rounded-full"></span>
           </h3>
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-12 flex-wrap gap-6 md:gap-10">
+            <Card person={members.presidentialPanel[0]} />
             <Card person={members.presidentialPanel[1]} />
           </div>
 
-          {/* Leadership (General Sec + VP) */}
+          {/* Vice President (General Sec + VP) */}
           <h3 className="text-3xl md:text-4xl font-semibold text-center mb-6 tracking-wide uppercase relative inline-block">
             Vice President
             <span className="block h-1 w-20 bg-purple-500 mx-auto mt-2 rounded-full"></span>
